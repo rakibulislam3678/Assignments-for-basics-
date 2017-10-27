@@ -7,7 +7,7 @@ int main()
     int get=0;
 while(1)
      {
-    printf("\n\nEnter \n1. for Task 2: \n2. for Task 3: \n3. for Task 4: \n4. for Task 5:\n5. for Task 6:\n6. for Task 7:\n7. for Task 8: \n8. for exit\nChoose: ");
+    printf("\nEnter \n1. for Task 2: \n2. for Task 3: \n3. for Task 4: \n4. for Task 5:\n5. for Task 6:\n6. for Task 7:\n7. for Task 8: \n8. for exit\nChoose: ");
     scanf("%d", &get);
 
     switch(get) {
@@ -172,6 +172,29 @@ printf("Enter the 10 numbers :");
 }
 void task8()
 {
+  int a[10],fst[10],scnd[10];
+
+    int i,n,e=0,o=0;
+printf("Enter the 10 numbers :");
+    for(i=0;i<10;++i){
+        scanf("%d",&a[i]);
+        if(i%2==0){
+            fst[e++]=a[i];
+        }
+        else {
+            scnd[o++]=a[i];
+        }
+
+    }
+
+        for(i=0;i<e;++i){
+            printf("%d ",fst[i]);
+
+        }
+        for(i=0;i<o;++i){
+            printf("%d ",scnd[i]);
+
+        }
 
 }
 void exit8()
